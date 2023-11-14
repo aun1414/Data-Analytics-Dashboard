@@ -1,0 +1,38 @@
+┌ Info: 2023-10-24 19:51:41 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\datadash"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-10-24 19:51:51 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\datadash"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-10-24 19:51:53 
+│ Web Server starting at http://0.0.0.0:9101 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\whc0S\src\Server.jl:161
+┌ Info: 2023-10-24 19:51:54 Listening on: 0.0.0.0:9101, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-10-24 20:07:47 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\datadash"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-10-24 20:07:58 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\datadash"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-10-24 20:07:59 
+│ Web Server starting at http://0.0.0.0:9101 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\whc0S\src\Server.jl:161
+┌ Info: 2023-10-24 20:08:00 Listening on: 0.0.0.0:9101, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-10-24 20:13:35 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:21:32 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:32:26 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:33:23 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:38:53 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:39:25 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:41:28 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:41:36 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:42:20 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-10-24 21:42:39 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22

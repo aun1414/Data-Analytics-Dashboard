@@ -1,0 +1,9 @@
+┌ Info: 2023-10-23 20:48:54 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\datadash"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-10-23 20:49:04 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\datadash"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-10-23 20:49:06 
+│ Web Server starting at http://0.0.0.0:9101 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\whc0S\src\Server.jl:161
+┌ Info: 2023-10-23 20:49:07 Listening on: 0.0.0.0:9101, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
