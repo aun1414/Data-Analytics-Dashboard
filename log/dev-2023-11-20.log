@@ -1,0 +1,1630 @@
+┌ Info: 2023-11-20 17:51:41 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-20 17:51:46 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-20 17:51:47 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-11-20 18:01:54 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-20 18:01:59 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-20 18:02:00 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Error: 2023-11-20 18:02:23 expected package `RDatasets [ce6b1742]` to exist in the manifest (use `resolve` to populate the manifest)
+│ Stacktrace:
+│   [1] pkgerror(::String, ::Vararg{String})
+│     @ Pkg.Types C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\Types.jl:69
+│   [2] package_info(env::Pkg.Types.EnvCache, pkg::Pkg.Types.PackageSpec)
+│     @ Pkg.API C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\API.jl:55
+│   [3] #9
+│     @ .\none:0 [inlined]
+│   [4] iterate
+│     @ .\generator.jl:47 [inlined]
+│   [5] _all(f::Base.var"#372#374", itr::Base.Generator{Vector{Pkg.Types.PackageSpec}, Pkg.API.var"#9#10"{Pkg.Types.EnvCache}}, #unused#::Colon)
+│     @ Base .\reduce.jl:1292
+│   [6] all
+│     @ .\reduce.jl:1278 [inlined]
+│   [7] Dict(kv::Base.Generator{Vector{Pkg.Types.PackageSpec}, Pkg.API.var"#9#10"{Pkg.Types.EnvCache}})
+│     @ Base .\dict.jl:111
+│   [8] dependencies
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\API.jl:85 [inlined]
+│   [9] dependencies
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\API.jl:82 [inlined]
+│  [10] list_packages()
+│     @ GeniePackageManager C:\Users\HP\.julia\packages\GeniePackageManager\e5EPb\src\GeniePackageManager.jl:37
+│  [11] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [12] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [13] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [14] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [15] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [16] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [17] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [18] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [19] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [20] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [21] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [22] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [23] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [24] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [25] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [26] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [27] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [28] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [29] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [30] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [31] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [32] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [33] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [34] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Info: 2023-11-20 18:04:59 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-20 18:05:20 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-20 18:05:23 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-20 18:05:23 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-11-20 18:18:53 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-20 18:19:14 Watching ["C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-20 18:19:17 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-20 18:19:18 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-11-20 18:20:31 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-20 18:22:02 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Error: 2023-11-20 18:22:03 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#356"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:22:04 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#356"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:22:08 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#356"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:22:08 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#356"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:22:09 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#356"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:22:10 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#356"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Info: 2023-11-20 18:22:18 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-20 18:22:26 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-20 18:25:22 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-20 18:30:17 Autoreloading
+└ @ GenieAutoReload C:\Users\HP\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Error: 2023-11-20 18:30:25 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   MethodError(convert, (DataFrames.DataFrame, DataTable{DataFrames.DataFrame}(150×6 DataFrame
+│  Row │ SepalLength  SepalWidth  PetalLength  PetalWidth  Species     Cluster
+│      │ Float64      Float64     Float64      Float64     Cat…        Int64
+│ ─────┼───────────────────────────────────────────────────────────────────────
+│    1 │         5.1         3.5          1.4         0.2  setosa            3
+│    2 │         4.9         3.0          1.4         0.2  setosa            3
+│    3 │         4.7         3.2          1.3         0.2  setosa            3
+│    4 │         4.6         3.1          1.5         0.2  setosa            3
+│    5 │         5.0         3.6          1.4         0.2  setosa            3
+│    6 │         5.4         3.9          1.7         0.4  setosa            3
+│    7 │         4.6         3.4          1.4         0.3  setosa            3
+│    8 │         5.0         3.4          1.5         0.2  setosa            3
+│    9 │         4.4         2.9          1.4         0.2  setosa            3
+│   10 │         4.9         3.1          1.5         0.1  setosa            3
+│   11 │         5.4         3.7          1.5         0.2  setosa            3
+│   12 │         4.8         3.4          1.6         0.2  setosa            3
+│   13 │         4.8         3.0          1.4         0.1  setosa            3
+│   14 │         4.3         3.0          1.1         0.1  setosa            3
+│   15 │         5.8         4.0          1.2         0.2  setosa            3
+│   16 │         5.7         4.4          1.5         0.4  setosa            3
+│   17 │         5.4         3.9          1.3         0.4  setosa            3
+│   18 │         5.1         3.5          1.4         0.3  setosa            3
+│   19 │         5.7         3.8          1.7         0.3  setosa            3
+│   20 │         5.1         3.8          1.5         0.3  setosa            3
+│   21 │         5.4         3.4          1.7         0.2  setosa            3
+│   22 │         5.1         3.7          1.5         0.4  setosa            3
+│   23 │         4.6         3.6          1.0         0.2  setosa            3
+│   24 │         5.1         3.3          1.7         0.5  setosa            3
+│   25 │         4.8         3.4          1.9         0.2  setosa            3
+│   26 │         5.0         3.0          1.6         0.2  setosa            3
+│   27 │         5.0         3.4          1.6         0.4  setosa            3
+│   28 │         5.2         3.5          1.5         0.2  setosa            3
+│   29 │         5.2         3.4          1.4         0.2  setosa            3
+│   30 │         4.7         3.2          1.6         0.2  setosa            3
+│   31 │         4.8         3.1          1.6         0.2  setosa            3
+│   32 │         5.4         3.4          1.5         0.4  setosa            3
+│   33 │         5.2         4.1          1.5         0.1  setosa            3
+│   34 │         5.5         4.2          1.4         0.2  setosa            3
+│   35 │         4.9         3.1          1.5         0.2  setosa            3
+│   36 │         5.0         3.2          1.2         0.2  setosa            3
+│   37 │         5.5         3.5          1.3         0.2  setosa            3
+│   38 │         4.9         3.6          1.4         0.1  setosa            3
+│   39 │         4.4         3.0          1.3         0.2  setosa            3
+│   40 │         5.1         3.4          1.5         0.2  setosa            3
+│   41 │         5.0         3.5          1.3         0.3  setosa            3
+│   42 │         4.5         2.3          1.3         0.3  setosa            3
+│   43 │         4.4         3.2          1.3         0.2  setosa            3
+│   44 │         5.0         3.5          1.6         0.6  setosa            3
+│   45 │         5.1         3.8          1.9         0.4  setosa            3
+│   46 │         4.8         3.0          1.4         0.3  setosa            3
+│   47 │         5.1         3.8          1.6         0.2  setosa            3
+│   48 │         4.6         3.2          1.4         0.2  setosa            3
+│   49 │         5.3         3.7          1.5         0.2  setosa            3
+│   50 │         5.0         3.3          1.4         0.2  setosa            3
+│   51 │         7.0         3.2          4.7         1.4  versicolor        2
+│   52 │         6.4         3.2          4.5         1.5  versicolor        1
+│   53 │         6.9         3.1          4.9         1.5  versicolor        2
+│   54 │         5.5         2.3          4.0         1.3  versicolor        1
+│   55 │         6.5         2.8          4.6         1.5  versicolor        1
+│   56 │         5.7         2.8          4.5         1.3  versicolor        1
+│   57 │         6.3         3.3          4.7         1.6  versicolor        1
+│   58 │         4.9         2.4          3.3         1.0  versicolor        1
+│   59 │         6.6         2.9          4.6         1.3  versicolor        1
+│   60 │         5.2         2.7          3.9         1.4  versicolor        1
+│   61 │         5.0         2.0          3.5         1.0  versicolor        1
+│   62 │         5.9         3.0          4.2         1.5  versicolor        1
+│   63 │         6.0         2.2          4.0         1.0  versicolor        1
+│   64 │         6.1         2.9          4.7         1.4  versicolor        1
+│   65 │         5.6         2.9          3.6         1.3  versicolor        1
+│   66 │         6.7         3.1          4.4         1.4  versicolor        1
+│   67 │         5.6         3.0          4.5         1.5  versicolor        1
+│   68 │         5.8         2.7          4.1         1.0  versicolor        1
+│   69 │         6.2         2.2          4.5         1.5  versicolor        1
+│   70 │         5.6         2.5          3.9         1.1  versicolor        1
+│   71 │         5.9         3.2          4.8         1.8  versicolor        1
+│   72 │         6.1         2.8          4.0         1.3  versicolor        1
+│   73 │         6.3         2.5          4.9         1.5  versicolor        1
+│   74 │         6.1         2.8          4.7         1.2  versicolor        1
+│   75 │         6.4         2.9          4.3         1.3  versicolor        1
+│   76 │         6.6         3.0          4.4         1.4  versicolor        1
+│   77 │         6.8         2.8          4.8         1.4  versicolor        1
+│   78 │         6.7         3.0          5.0         1.7  versicolor        2
+│   79 │         6.0         2.9          4.5         1.5  versicolor        1
+│   80 │         5.7         2.6          3.5         1.0  versicolor        1
+│   81 │         5.5         2.4          3.8         1.1  versicolor        1
+│   82 │         5.5         2.4          3.7         1.0  versicolor        1
+│   83 │         5.8         2.7          3.9         1.2  versicolor        1
+│   84 │         6.0         2.7          5.1         1.6  versicolor        1
+│   85 │         5.4         3.0          4.5         1.5  versicolor        1
+│   86 │         6.0         3.4          4.5         1.6  versicolor        1
+│   87 │         6.7         3.1          4.7         1.5  versicolor        1
+│   88 │         6.3         2.3          4.4         1.3  versicolor        1
+│   89 │         5.6         3.0          4.1         1.3  versicolor        1
+│   90 │         5.5         2.5          4.0         1.3  versicolor        1
+│   91 │         5.5         2.6          4.4         1.2  versicolor        1
+│   92 │         6.1         3.0          4.6         1.4  versicolor        1
+│   93 │         5.8         2.6          4.0         1.2  versicolor        1
+│   94 │         5.0         2.3          3.3         1.0  versicolor        1
+│   95 │         5.6         2.7          4.2         1.3  versicolor        1
+│   96 │         5.7         3.0          4.2         1.2  versicolor        1
+│   97 │         5.7         2.9          4.2         1.3  versicolor        1
+│   98 │         6.2         2.9          4.3         1.3  versicolor        1
+│   99 │         5.1         2.5          3.0         1.1  versicolor        1
+│  100 │         5.7         2.8          4.1         1.3  versicolor        1
+│  101 │         6.3         3.3          6.0         2.5  virginica         2
+│  102 │         5.8         2.7          5.1         1.9  virginica         1
+│  103 │         7.1         3.0          5.9         2.1  virginica         2
+│  104 │         6.3         2.9          5.6         1.8  virginica         2
+│  105 │         6.5         3.0          5.8         2.2  virginica         2
+│  106 │         7.6         3.0          6.6         2.1  virginica         2
+│  107 │         4.9         2.5          4.5         1.7  virginica         1
+│  108 │         7.3         2.9          6.3         1.8  virginica         2
+│  109 │         6.7         2.5          5.8         1.8  virginica         2
+│  110 │         7.2         3.6          6.1         2.5  virginica         2
+│  111 │         6.5         3.2          5.1         2.0  virginica         2
+│  112 │         6.4         2.7          5.3         1.9  virginica         2
+│  113 │         6.8         3.0          5.5         2.1  virginica         2
+│  114 │         5.7         2.5          5.0         2.0  virginica         1
+│  115 │         5.8         2.8          5.1         2.4  virginica         1
+│  116 │         6.4         3.2          5.3         2.3  virginica         2
+│  117 │         6.5         3.0          5.5         1.8  virginica         2
+│  118 │         7.7         3.8          6.7         2.2  virginica         2
+│  119 │         7.7         2.6          6.9         2.3  virginica         2
+│  120 │         6.0         2.2          5.0         1.5  virginica         1
+│  121 │         6.9         3.2          5.7         2.3  virginica         2
+│  122 │         5.6         2.8          4.9         2.0  virginica         1
+│  123 │         7.7         2.8          6.7         2.0  virginica         2
+│  124 │         6.3         2.7          4.9         1.8  virginica         1
+│  125 │         6.7         3.3          5.7         2.1  virginica         2
+│  126 │         7.2         3.2          6.0         1.8  virginica         2
+│  127 │         6.2         2.8          4.8         1.8  virginica         1
+│  128 │         6.1         3.0          4.9         1.8  virginica         1
+│  129 │         6.4         2.8          5.6         2.1  virginica         2
+│  130 │         7.2         3.0          5.8         1.6  virginica         2
+│  131 │         7.4         2.8          6.1         1.9  virginica         2
+│  132 │         7.9         3.8          6.4         2.0  virginica         2
+│  133 │         6.4         2.8          5.6         2.2  virginica         2
+│  134 │         6.3         2.8          5.1         1.5  virginica         1
+│  135 │         6.1         2.6          5.6         1.4  virginica         2
+│  136 │         7.7         3.0          6.1         2.3  virginica         2
+│  137 │         6.3         3.4          5.6         2.4  virginica         2
+│  138 │         6.4         3.1          5.5         1.8  virginica         2
+│  139 │         6.0         3.0          4.8         1.8  virginica         1
+│  140 │         6.9         3.1          5.4         2.1  virginica         2
+│  141 │         6.7         3.1          5.6         2.4  virginica         2
+│  142 │         6.9         3.1          5.1         2.3  virginica         2
+│  143 │         5.8         2.7          5.1         1.9  virginica         1
+│  144 │         6.8         3.2          5.9         2.3  virginica         2
+│  145 │         6.7         3.3          5.7         2.5  virginica         2
+│  146 │         6.7         3.0          5.2         2.3  virginica         2
+│  147 │         6.3         2.5          5.0         1.9  virginica         1
+│  148 │         6.5         3.0          5.2         2.0  virginica         2
+│  149 │         6.2         3.4          5.4         2.3  virginica         2
+│  150 │         5.9         3.0          5.1         1.8  virginica         1, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()))), 0x0000000000008461)
+│ 
+│   exception = (MethodError(convert, (DataFrames.DataFrame, DataTable{DataFrames.DataFrame}(150×6 DataFrame
+ Row │ SepalLength  SepalWidth  PetalLength  PetalWidth  Species     Cluster
+     │ Float64      Float64     Float64      Float64     Cat…        Int64
+─────┼───────────────────────────────────────────────────────────────────────
+   1 │         5.1         3.5          1.4         0.2  setosa            3
+   2 │         4.9         3.0          1.4         0.2  setosa            3
+   3 │         4.7         3.2          1.3         0.2  setosa            3
+   4 │         4.6         3.1          1.5         0.2  setosa            3
+   5 │         5.0         3.6          1.4         0.2  setosa            3
+   6 │         5.4         3.9          1.7         0.4  setosa            3
+   7 │         4.6         3.4          1.4         0.3  setosa            3
+   8 │         5.0         3.4          1.5         0.2  setosa            3
+   9 │         4.4         2.9          1.4         0.2  setosa            3
+  10 │         4.9         3.1          1.5         0.1  setosa            3
+  11 │         5.4         3.7          1.5         0.2  setosa            3
+  12 │         4.8         3.4          1.6         0.2  setosa            3
+  13 │         4.8         3.0          1.4         0.1  setosa            3
+  14 │         4.3         3.0          1.1         0.1  setosa            3
+  15 │         5.8         4.0          1.2         0.2  setosa            3
+  16 │         5.7         4.4          1.5         0.4  setosa            3
+  17 │         5.4         3.9          1.3         0.4  setosa            3
+  18 │         5.1         3.5          1.4         0.3  setosa            3
+  19 │         5.7         3.8          1.7         0.3  setosa            3
+  20 │         5.1         3.8          1.5         0.3  setosa            3
+  21 │         5.4         3.4          1.7         0.2  setosa            3
+  22 │         5.1         3.7          1.5         0.4  setosa            3
+  23 │         4.6         3.6          1.0         0.2  setosa            3
+  24 │         5.1         3.3          1.7         0.5  setosa            3
+  25 │         4.8         3.4          1.9         0.2  setosa            3
+  26 │         5.0         3.0          1.6         0.2  setosa            3
+  27 │         5.0         3.4          1.6         0.4  setosa            3
+  28 │         5.2         3.5          1.5         0.2  setosa            3
+  29 │         5.2         3.4          1.4         0.2  setosa            3
+  30 │         4.7         3.2          1.6         0.2  setosa            3
+  31 │         4.8         3.1          1.6         0.2  setosa            3
+  32 │         5.4         3.4          1.5         0.4  setosa            3
+  33 │         5.2         4.1          1.5         0.1  setosa            3
+  34 │         5.5         4.2          1.4         0.2  setosa            3
+  35 │         4.9         3.1          1.5         0.2  setosa            3
+  36 │         5.0         3.2          1.2         0.2  setosa            3
+  37 │         5.5         3.5          1.3         0.2  setosa            3
+  38 │         4.9         3.6          1.4         0.1  setosa            3
+  39 │         4.4         3.0          1.3         0.2  setosa            3
+  40 │         5.1         3.4          1.5         0.2  setosa            3
+  41 │         5.0         3.5          1.3         0.3  setosa            3
+  42 │         4.5         2.3          1.3         0.3  setosa            3
+  43 │         4.4         3.2          1.3         0.2  setosa            3
+  44 │         5.0         3.5          1.6         0.6  setosa            3
+  45 │         5.1         3.8          1.9         0.4  setosa            3
+  46 │         4.8         3.0          1.4         0.3  setosa            3
+  47 │         5.1         3.8          1.6         0.2  setosa            3
+  48 │         4.6         3.2          1.4         0.2  setosa            3
+  49 │         5.3         3.7          1.5         0.2  setosa            3
+  50 │         5.0         3.3          1.4         0.2  setosa            3
+  51 │         7.0         3.2          4.7         1.4  versicolor        2
+  52 │         6.4         3.2          4.5         1.5  versicolor        1
+  53 │         6.9         3.1          4.9         1.5  versicolor        2
+  54 │         5.5         2.3          4.0         1.3  versicolor        1
+  55 │         6.5         2.8          4.6         1.5  versicolor        1
+  56 │         5.7         2.8          4.5         1.3  versicolor        1
+  57 │         6.3         3.3          4.7         1.6  versicolor        1
+  58 │         4.9         2.4          3.3         1.0  versicolor        1
+  59 │         6.6         2.9          4.6         1.3  versicolor        1
+  60 │         5.2         2.7          3.9         1.4  versicolor        1
+  61 │         5.0         2.0          3.5         1.0  versicolor        1
+  62 │         5.9         3.0          4.2         1.5  versicolor        1
+  63 │         6.0         2.2          4.0         1.0  versicolor        1
+  64 │         6.1         2.9          4.7         1.4  versicolor        1
+  65 │         5.6         2.9          3.6         1.3  versicolor        1
+  66 │         6.7         3.1          4.4         1.4  versicolor        1
+  67 │         5.6         3.0          4.5         1.5  versicolor        1
+  68 │         5.8         2.7          4.1         1.0  versicolor        1
+  69 │         6.2         2.2          4.5         1.5  versicolor        1
+  70 │         5.6         2.5          3.9         1.1  versicolor        1
+  71 │         5.9         3.2          4.8         1.8  versicolor        1
+  72 │         6.1         2.8          4.0         1.3  versicolor        1
+  73 │         6.3         2.5          4.9         1.5  versicolor        1
+  74 │         6.1         2.8          4.7         1.2  versicolor        1
+  75 │         6.4         2.9          4.3         1.3  versicolor        1
+  76 │         6.6         3.0          4.4         1.4  versicolor        1
+  77 │         6.8         2.8          4.8         1.4  versicolor        1
+  78 │         6.7         3.0          5.0         1.7  versicolor        2
+  79 │         6.0         2.9          4.5         1.5  versicolor        1
+  80 │         5.7         2.6          3.5         1.0  versicolor        1
+  81 │         5.5         2.4          3.8         1.1  versicolor        1
+  82 │         5.5         2.4          3.7         1.0  versicolor        1
+  83 │         5.8         2.7          3.9         1.2  versicolor        1
+  84 │         6.0         2.7          5.1         1.6  versicolor        1
+  85 │         5.4         3.0          4.5         1.5  versicolor        1
+  86 │         6.0         3.4          4.5         1.6  versicolor        1
+  87 │         6.7         3.1          4.7         1.5  versicolor        1
+  88 │         6.3         2.3          4.4         1.3  versicolor        1
+  89 │         5.6         3.0          4.1         1.3  versicolor        1
+  90 │         5.5         2.5          4.0         1.3  versicolor        1
+  91 │         5.5         2.6          4.4         1.2  versicolor        1
+  92 │         6.1         3.0          4.6         1.4  versicolor        1
+  93 │         5.8         2.6          4.0         1.2  versicolor        1
+  94 │         5.0         2.3          3.3         1.0  versicolor        1
+  95 │         5.6         2.7          4.2         1.3  versicolor        1
+  96 │         5.7         3.0          4.2         1.2  versicolor        1
+  97 │         5.7         2.9          4.2         1.3  versicolor        1
+  98 │         6.2         2.9          4.3         1.3  versicolor        1
+  99 │         5.1         2.5          3.0         1.1  versicolor        1
+ 100 │         5.7         2.8          4.1         1.3  versicolor        1
+ 101 │         6.3         3.3          6.0         2.5  virginica         2
+ 102 │         5.8         2.7          5.1         1.9  virginica         1
+ 103 │         7.1         3.0          5.9         2.1  virginica         2
+ 104 │         6.3         2.9          5.6         1.8  virginica         2
+ 105 │         6.5         3.0          5.8         2.2  virginica         2
+ 106 │         7.6         3.0          6.6         2.1  virginica         2
+ 107 │         4.9         2.5          4.5         1.7  virginica         1
+ 108 │         7.3         2.9          6.3         1.8  virginica         2
+ 109 │         6.7         2.5          5.8         1.8  virginica         2
+ 110 │         7.2         3.6          6.1         2.5  virginica         2
+ 111 │         6.5         3.2          5.1         2.0  virginica         2
+ 112 │         6.4         2.7          5.3         1.9  virginica         2
+ 113 │         6.8         3.0          5.5         2.1  virginica         2
+ 114 │         5.7         2.5          5.0         2.0  virginica         1
+ 115 │         5.8         2.8          5.1         2.4  virginica         1
+ 116 │         6.4         3.2          5.3         2.3  virginica         2
+ 117 │         6.5         3.0          5.5         1.8  virginica         2
+ 118 │         7.7         3.8          6.7         2.2  virginica         2
+ 119 │         7.7         2.6          6.9         2.3  virginica         2
+ 120 │         6.0         2.2          5.0         1.5  virginica         1
+ 121 │         6.9         3.2          5.7         2.3  virginica         2
+ 122 │         5.6         2.8          4.9         2.0  virginica         1
+ 123 │         7.7         2.8          6.7         2.0  virginica         2
+ 124 │         6.3         2.7          4.9         1.8  virginica         1
+ 125 │         6.7         3.3          5.7         2.1  virginica         2
+ 126 │         7.2         3.2          6.0         1.8  virginica         2
+ 127 │         6.2         2.8          4.8         1.8  virginica         1
+ 128 │         6.1         3.0          4.9         1.8  virginica         1
+ 129 │         6.4         2.8          5.6         2.1  virginica         2
+ 130 │         7.2         3.0          5.8         1.6  virginica         2
+ 131 │         7.4         2.8          6.1         1.9  virginica         2
+ 132 │         7.9         3.8          6.4         2.0  virginica         2
+ 133 │         6.4         2.8          5.6         2.2  virginica         2
+ 134 │         6.3         2.8          5.1         1.5  virginica         1
+ 135 │         6.1         2.6          5.6         1.4  virginica         2
+ 136 │         7.7         3.0          6.1         2.3  virginica         2
+ 137 │         6.3         3.4          5.6         2.4  virginica         2
+ 138 │         6.4         3.1          5.5         1.8  virginica         2
+ 139 │         6.0         3.0          4.8         1.8  virginica         1
+ 140 │         6.9         3.1          5.4         2.1  virginica         2
+ 141 │         6.7         3.1          5.6         2.4  virginica         2
+ 142 │         6.9         3.1          5.1         2.3  virginica         2
+ 143 │         5.8         2.7          5.1         1.9  virginica         1
+ 144 │         6.8         3.2          5.9         2.3  virginica         2
+ 145 │         6.7         3.3          5.7         2.5  virginica         2
+ 146 │         6.7         3.0          5.2         2.3  virginica         2
+ 147 │         6.3         2.5          5.0         1.9  virginica         1
+ 148 │         6.5         3.0          5.2         2.0  virginica         2
+ 149 │         6.2         3.4          5.4         2.3  virginica         2
+ 150 │         5.9         3.0          5.1         1.8  virginica         1, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()))), 0x0000000000008461), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ffa56e5eeac, Ptr{Nothing} @0x00007ffa56e656c5, Ptr{Nothing} @0x00007ffa56e658e2, Ptr{Nothing} @0x00007ffa56e69ddd, Ptr{Nothing} @0x000001fc805c006e, Ptr{Nothing} @0x000001fcd2148c3f, Ptr{Nothing} @0x000001fc805bfd7e, Ptr{Nothing} @0x000001fc805bff43, Ptr{Nothing} @0x000001fc805bff9c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc805b8160, Ptr{Nothing} @0x000001fc805b8230, Ptr{Nothing} @0x000001fc805b7263, Ptr{Nothing} @0x000001fc805b73d3, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 18:31:23 Failed to revise C:\Users\HP\.julia\geniebuilder\apps\test\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\HP\\.julia\\packages\\Stipple\\jDZsS\\src\\ReactiveTools.jl:388", UndefVarError(:datatable), Any[(top-level scope at ReactiveTools.jl:388, 1)])
+└ @ Revise C:\Users\HP\.julia\packages\Revise\xRltd\src\packagedef.jl:723
+┌ Warning: 2023-11-20 18:31:23 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\HP\.julia\geniebuilder\apps\test\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\HP\.julia\packages\Revise\xRltd\src\packagedef.jl:833
+┌ Error: 2023-11-20 18:31:24 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#408"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:31:24 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#408"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:31:24 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#408"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:31:24 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#408"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:31:26 UndefVarError: `datatable` not defined
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#408"()
+│     @ Main .\util.jl:567
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│   [4] |>
+│     @ .\operators.jl:907 [inlined]
+│   [5] init(::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool)
+│     @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:436
+│   [6] init
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Stipple.jl:425 [inlined]
+│   [7] init_from_storage(::Type{Main_ReactiveModel}; channel::Nothing, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:15
+│   [8] init_from_storage(::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ModelStorage.jl:11
+│   [9] top-level scope
+│     @ C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:609
+│  [10] eval
+│     @ .\boot.jl:370 [inlined]
+│  [11] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\HP\.julia\packages\Stipple\jDZsS\src\ReactiveTools.jl:1032
+│  [12] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [13] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [14] (::Stipple.Pages.var"#5#6"{FilePathsBase.WindowsPath, Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}}, String, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}})()
+│     @ Stipple.Pages C:\Users\HP\.julia\packages\Stipple\jDZsS\src\Pages.jl:68
+│  [15] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [16] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [17] route_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [18] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [19] handle_request
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [20] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [21] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [22] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [23] #153
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [24] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [25] #remotecall_fetch#158
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [27] #remotecall_fetch#162
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [28] remotecall_fetch
+│     @ C:\Users\HP\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [30] setup_http_listener (repeats 2 times)
+│     @ C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [31] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [33] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [34] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [35] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [37] macro expansion
+│     @ C:\Users\HP\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [38] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\HP\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-20 18:53:27 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   0
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc806052a0, Ptr{Nothing} @0x000001fc806056ac, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fc806086fc, Ptr{Nothing} @0x000001fc8060901e, Ptr{Nothing} @0x000001fc8060905c, Ptr{Nothing} @0x000001fc80608453, Ptr{Nothing} @0x000001fc80608520, Ptr{Nothing} @0x000001fc805fce33, Ptr{Nothing} @0x000001fc805fcfa3, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:30:37 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc80630590, Ptr{Nothing} @0x000001fc8063099c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc80629020, Ptr{Nothing} @0x000001fc806290f0, Ptr{Nothing} @0x000001fc80628123, Ptr{Nothing} @0x000001fc80628293, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:38:20 Failed to revise C:\Users\HP\.julia\geniebuilder\apps\test\app.jl
+│   exception = (LoadError("C:\\Users\\HP\\.julia\\geniebuilder\\apps\\test\\app.jl", 8, BoundsError(Any[:(features = [:SepalLength, :SepalWidth, :PetalLength, :PetalWidth])], (2,))), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise C:\Users\HP\.julia\packages\Revise\xRltd\src\packagedef.jl:725
+┌ Warning: 2023-11-20 19:38:21 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\HP\.julia\geniebuilder\apps\test\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\HP\.julia\packages\Revise\xRltd\src\packagedef.jl:833
+┌ Error: 2023-11-20 19:40:24 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9c2f20, Ptr{Nothing} @0x000001fc8e9c332c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8064b810, Ptr{Nothing} @0x000001fc8064b8e0, Ptr{Nothing} @0x000001fc8064a913, Ptr{Nothing} @0x000001fc8064aa83, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:40:24 KeyError("NHWZROTTDSFRZHUEHUQLIQVKFZHNVWXA")
+└ @ Genie.WebChannels C:\Users\HP\.julia\packages\Genie\ZW9YP\src\WebChannels.jl:246
+┌ Error: 2023-11-20 19:40:56 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9c2f20, Ptr{Nothing} @0x000001fc8e9c332c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8064b810, Ptr{Nothing} @0x000001fc8064b8e0, Ptr{Nothing} @0x000001fc8064a913, Ptr{Nothing} @0x000001fc8064aa83, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:42:00 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9c2f20, Ptr{Nothing} @0x000001fc8e9c332c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8064b810, Ptr{Nothing} @0x000001fc8064b8e0, Ptr{Nothing} @0x000001fc8064a913, Ptr{Nothing} @0x000001fc8064aa83, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:42:54 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9c2f20, Ptr{Nothing} @0x000001fc8e9c332c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8064b810, Ptr{Nothing} @0x000001fc8064b8e0, Ptr{Nothing} @0x000001fc8064a913, Ptr{Nothing} @0x000001fc8064aa83, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:46:13 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9c2f20, Ptr{Nothing} @0x000001fc8e9c332c, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8064b810, Ptr{Nothing} @0x000001fc8064b8e0, Ptr{Nothing} @0x000001fc8064a913, Ptr{Nothing} @0x000001fc8064aa83, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:52:13 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9f9cb0, Ptr{Nothing} @0x000001fc8e9fa0bc, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8e9f2250, Ptr{Nothing} @0x000001fc8e9f2320, Ptr{Nothing} @0x000001fc8e9f1353, Ptr{Nothing} @0x000001fc8e9f14c3, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:52:14 KeyError("UBMISKILRXORXJYOCAJXBPEGESQDKBOZ")
+└ @ Genie.WebChannels C:\Users\HP\.julia\packages\Genie\ZW9YP\src\WebChannels.jl:246
+┌ Error: 2023-11-20 19:52:58 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\HP\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001fcd217ba72, Ptr{Nothing} @0x000001fcd217bc64, Ptr{Nothing} @0x000001fcd217bd3b, Ptr{Nothing} @0x000001fcd21598b5, Ptr{Nothing} @0x000001fc8e9f9cb0, Ptr{Nothing} @0x000001fc8e9fa0bc, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef137dd, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x00007ffa0ef139f3, Ptr{Nothing} @0x00007ffa56e76663, Ptr{Nothing} @0x000001fccf23f80f, Ptr{Nothing} @0x000001fccf23f846, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcd214b1c5, Ptr{Nothing} @0x000001fcd214bacd, Ptr{Nothing} @0x000001fcd214bb0a, Ptr{Nothing} @0x000001fc8e9f2250, Ptr{Nothing} @0x000001fc8e9f2320, Ptr{Nothing} @0x000001fc8e9f1353, Ptr{Nothing} @0x000001fc8e9f14c3, Ptr{Nothing} @0x000001fcd2138ca3, Ptr{Nothing} @0x000001fcd21391bd, Ptr{Nothing} @0x000001fcd2139240, Ptr{Nothing} @0x000001fcd213927a, Ptr{Nothing} @0x000001fcd210ccf9, Ptr{Nothing} @0x000001fcd210cd43, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e73661, Ptr{Nothing} @0x000001fcf3e73cb2, Ptr{Nothing} @0x000001fcf3e7503f, Ptr{Nothing} @0x000001fcf3e7af20, Ptr{Nothing} @0x000001fcf3e7afc6, Ptr{Nothing} @0x00007ffa56e7476a, Ptr{Nothing} @0x000001fcf3e6927c, Ptr{Nothing} @0x000001fcf3e6b4a4, Ptr{Nothing} @0x000001fcf3e6b563, Ptr{Nothing} @0x00007ffa56e884fb])
+└ @ Stipple C:\Users\HP\.julia\packages\Stipple\jDZsS\src\stipple\mutators.jl:54
+┌ Error: 2023-11-20 19:52:58 KeyError("BOSVSPWWGROKXUVDHKDHDFLUFOUGXZTQ")
+└ @ Genie.WebChannels C:\Users\HP\.julia\packages\Genie\ZW9YP\src\WebChannels.jl:246

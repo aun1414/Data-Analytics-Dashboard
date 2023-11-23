@@ -1,110 +1,37 @@
-<div class="row"></div>
-<h4>DataDash</h4>
+<header class="st-header q-pa-sm">
+    <h1 class="st-header__title text-h3">My Iris Dashboard</h1>
+</header>
 <div class="row">
-    <div class="col col-2">
-        <h2>Filters</h2>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Minimum Number of Oscars</h6>
-                <q-slider id="ijg23"></q-slider>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Year Released</h6>
-                <q-range></q-range>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Genre</h6>
-                <q-btn-dropdown></q-btn-dropdown>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Country</h6>
-                <q-btn-dropdown></q-btn-dropdown>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Director<br /></h6>
-                <q-btn-dropdown></q-btn-dropdown>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Cast</h6>
-                <q-btn-dropdown></q-btn-dropdown>
-            </div>
-        </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b>Number of clusters</b></p>
+        <q-slider v-model="no_of_clusters" :label="isready"></q-slider>
     </div>
-    <div class="st-col col-12 col-sm st-module">
-        <p>Column 2 content</p>
-        <plotly></plotly>
-        <q-table></q-table>
+    <div class="col col-12 col-sm st-module">
+        <p><b>Number of iterations</b></p>
+        <q-slider v-model="no_of_iterations" :label="isready"></q-slider>
     </div>
-    <div class="col col-2">
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Title</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Year</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Genre</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Director</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Cast</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>IMDB Rating</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Language</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Country</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Awards</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="st-col col-12">
-                <h6>Oscars</h6>
-                <div>Placeholder</div>
-            </div>
-        </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b>X feature</b></p>
+        <q-select :model-value="features" v-model="xfeature" :options="features"></q-select>
+    </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b>Y feature</b></p>
+        <q-select :model-value="features" :options="features" v-model="yfeature"></q-select>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm st-module">
+        <p><b>Species clusters</b></p>
+        <plotly :data="irisplot"></plotly>
+    </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b>k-means clusters</b></p>
+        <plotly :data="clusterplot"></plotly>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm">
+        <p><b>Iris data</b></p>
+        <% table(:datatable; dense=true, flat=true, style="height: 350px;", pagination=:datatablepagination) %> 
     </div>
 </div>

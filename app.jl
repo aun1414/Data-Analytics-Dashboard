@@ -1,32 +1,39 @@
-module App
-# set up Genie development environment
+using Clustering
+import RDatasets: dataset
+import DataFrames
+
 using GenieFramework
 @genietools
 
-# add your data analysis code
-function mean(x)
-    sum(x) / length(x)
+const data = DataFrames.insertcols!(dataset("datasets", "iris"), :Cluster => zeros(Int, 150))
+features = [:SepalLength, :SepalWidth, :PetalLength, :PetalWidth]
+
+function cluster(no_of_clusters=3, no_of_iterations=10)
+    feats = Matrix(data[:, [c for c in features]])' |> collect
+    result = kmeans(feats, no_of_clusters; maxiter=no_of_iterations)
+    data[!, :Cluster] = assignments(result)
 end
 
-# add reactive code to make the UI interactive
-@app begin
-    # reactive variables are tagged with @in and @out
-    @in N = 0
-    @out msg = "The average is 0."
-    # @private defines a non-reactive variable
-    @private result = 0.0
+@handlers begin
+    @out features
+    @in no_of_clusters = 3
+    @in no_of_iterations = 10
+    @in xfeature = :SepalLength
+    @in yfeature = :SepalWidth
+    @out datatable = DataTable(data)
+    @out datatablepagination = DataTablePagination(rows_per_page=50)
+    @out irisplot = PlotData[]
+    @out clusterplot = PlotData[]
 
-    # watch a variable and execute a block of code when
-    # its value changes
-    @onchange N begin
-        # the values of result and msg in the UI will
-        # be automatically updated
-        result = mean(rand(N))
-        msg = "The average is $result."
+    @onchange isready, xfeature, yfeature, no_of_clusters, no_of_iterations begin
+        cluster(no_of_clusters, no_of_iterations)
+        datatable = DataTable(data)
+        irisplot = plotdata(data, xfeature, yfeature; groupfeature=:Species)
+        clusterplot = plotdata(data, xfeature, yfeature; groupfeature=:Cluster)
     end
 end
 
-# register a new route and the page that will be
-# loaded on access
-@page("/", "app.jl.html")
-end
+
+meta = Dict("og:title" => "Iris Clustering", "og:description" => "Dashboard to analyze k-means clustering results for the Iris dataset.", "og:image" => "/preview.png")
+layout = DEFAULT_LAYOUT(meta=meta)
+@page("/", "app.jl.html", layout)
