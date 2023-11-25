@@ -1,0 +1,139 @@
+┌ Info: 2023-11-22 22:46:50 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-22 22:46:54 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-22 22:46:55 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-11-22 22:49:26 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-22 22:49:30 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-22 22:49:30 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Error: 2023-11-22 22:49:46 expected package `RDatasets [ce6b1742]` to exist in the manifest (use `resolve` to populate the manifest)
+│ Stacktrace:
+│   [1] pkgerror(::String, ::Vararg{String})
+│     @ Pkg.Types C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\Types.jl:69
+│   [2] package_info(env::Pkg.Types.EnvCache, pkg::Pkg.Types.PackageSpec)
+│     @ Pkg.API C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\API.jl:55
+│   [3] #9
+│     @ .\none:0 [inlined]
+│   [4] iterate
+│     @ .\generator.jl:47 [inlined]
+│   [5] _all(f::Base.var"#372#374", itr::Base.Generator{Vector{Pkg.Types.PackageSpec}, Pkg.API.var"#9#10"{Pkg.Types.EnvCache}}, #unused#::Colon)
+│     @ Base .\reduce.jl:1292
+│   [6] all
+│     @ .\reduce.jl:1278 [inlined]
+│   [7] Dict(kv::Base.Generator{Vector{Pkg.Types.PackageSpec}, Pkg.API.var"#9#10"{Pkg.Types.EnvCache}})
+│     @ Base .\dict.jl:111
+│   [8] dependencies
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\API.jl:85 [inlined]
+│   [9] dependencies
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Pkg\src\API.jl:82 [inlined]
+│  [10] list_packages()
+│     @ GeniePackageManager C:\Users\Mahad\.julia\packages\GeniePackageManager\e5EPb\src\GeniePackageManager.jl:37
+│  [11] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Router.jl:537
+│  [12] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Router.jl:173
+│  [13] route_request
+│     @ C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Router.jl:147 [inlined]
+│  [14] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:283
+│  [15] handle_request
+│     @ C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:275 [inlined]
+│  [16] (::Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\macros.jl:123
+│  [17] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [18] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [19] #153
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:425 [inlined]
+│  [20] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#35#36"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}}}, print_error::Bool)
+│     @ Distributed C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\process_messages.jl:70
+│  [21] #remotecall_fetch#158
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:450 [inlined]
+│  [22] remotecall_fetch
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:449 [inlined]
+│  [23] #remotecall_fetch#162
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [24] remotecall_fetch
+│     @ C:\Users\Mahad\AppData\Local\Programs\Julia-1.9.3\share\julia\stdlib\v1.9\Distributed\src\remotecall.jl:492 [inlined]
+│  [25] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:327
+│  [26] setup_http_listener (repeats 2 times)
+│     @ C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:325 [inlined]
+│  [27] (::Genie.Server.var"#32#33"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:296
+│  [28] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:316
+│  [29] (::Genie.Server.var"#7#15")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:123
+│  [30] #invokelatest#2
+│     @ .\essentials.jl:819 [inlined]
+│  [31] invokelatest
+│     @ .\essentials.jl:816 [inlined]
+│  [32] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:450
+│  [33] macro expansion
+│     @ C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:386 [inlined]
+│  [34] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#7#15", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers .\task.jl:514
+│ 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:339
+┌ Error: 2023-11-22 22:50:06 Error watching manifest
+│   exception = (ErrorException("lowering returned an error, \$(Expr(:error, \"\\\"\\\$\\\" expression outside quote around C:\\\\Users\\\\Mahad\\\\.julia\\\\packages\\\\ExproniconLite\\\\IBbmc\\\\src\\\\transform.jl:75\"))"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007fff22feb574, Ptr{Nothing} @0x00007fff9874be1a])
+└ @ Revise C:\Users\Mahad\.julia\packages\Revise\xRltd\src\pkgs.jl:489
+┌ Info: 2023-11-22 22:50:48 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-22 22:51:03 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-22 22:51:05 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\UTv5H\src\Server.jl:166
+┌ Info: 2023-11-22 22:51:05 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Error: 2023-11-22 22:51:49 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\Mahad\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   0
+│ 
+│   Exception:
+│   ArgumentError("k must be from 1:n (n=150), k=0 given.")
+│ 
+│   exception = (ArgumentError("k must be from 1:n (n=150), k=0 given."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001d73f2b1752, Ptr{Nothing} @0x000001d73f2b1944, Ptr{Nothing} @0x000001d73f2b1a1b, Ptr{Nothing} @0x000001d73f28f6d5, Ptr{Nothing} @0x000001d73f290450, Ptr{Nothing} @0x000001d73f29085c, Ptr{Nothing} @0x00007fff2b5e476a, Ptr{Nothing} @0x00007fff2b5e6663, Ptr{Nothing} @0x00007ffed32137dd, Ptr{Nothing} @0x00007fff2b5e6663, Ptr{Nothing} @0x00007ffed32139f3, Ptr{Nothing} @0x00007fff2b5e6663, Ptr{Nothing} @0x000001d77fb403cf, Ptr{Nothing} @0x000001d77fb40406, Ptr{Nothing} @0x00007fff2b5e476a, Ptr{Nothing} @0x000001d73f2c2a2c, Ptr{Nothing} @0x000001d73f2c334e, Ptr{Nothing} @0x000001d73f2c338c, Ptr{Nothing} @0x000001d73f2c2783, Ptr{Nothing} @0x000001d73f2c2850, Ptr{Nothing} @0x000001d73f279963, Ptr{Nothing} @0x000001d73f279ad3, Ptr{Nothing} @0x000001d73f26e2c3, Ptr{Nothing} @0x000001d73f26e7dd, Ptr{Nothing} @0x000001d73f26e860, Ptr{Nothing} @0x000001d73f26e89a, Ptr{Nothing} @0x000001d73f241a39, Ptr{Nothing} @0x000001d73f241a83, Ptr{Nothing} @0x00007fff2b5e476a, Ptr{Nothing} @0x000001d762390ad2, Ptr{Nothing} @0x000001d762391122, Ptr{Nothing} @0x000001d762397e89, Ptr{Nothing} @0x000001d76239c401, Ptr{Nothing} @0x000001d76239c4a6, Ptr{Nothing} @0x00007fff2b5e476a, Ptr{Nothing} @0x000001d76238a78c, Ptr{Nothing} @0x000001d76238c9d4, Ptr{Nothing} @0x000001d76238ca93, Ptr{Nothing} @0x00007fff2b5f84fb])
+└ @ Stipple C:\Users\Mahad\.julia\packages\Stipple\nxNDc\src\stipple\mutators.jl:54
+┌ Error: 2023-11-23 00:12:57 Failed to revise C:\Users\Mahad\.julia\geniebuilder\apps\test\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test\\app.jl:8", DimensionMismatch("length of new column Cluster which is 150 must match the number of rows in data frame (31022)"), Any[(insertcols!(df::DataFrames.DataFrame, col::Int64, name_cols::Pair{Symbol, Vector{Int64}}; after::Bool, makeunique::Bool, copycols::Bool) at abstractdataframe.jl:3053, 1), (insertcols! at abstractdataframe.jl:3001 [inlined], 1), (#insertcols!#180 at abstractdataframe.jl:3142 [inlined], 1), (insertcols!(df::DataFrames.DataFrame, name_cols::Pair{Symbol, Vector{Int64}}) at abstractdataframe.jl:3142, 1), (top-level scope at app.jl:8, 1)])
+└ @ Revise C:\Users\Mahad\.julia\packages\Revise\xRltd\src\packagedef.jl:723
+┌ Warning: 2023-11-23 00:12:57 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\Mahad\.julia\geniebuilder\apps\test\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\Mahad\.julia\packages\Revise\xRltd\src\packagedef.jl:833

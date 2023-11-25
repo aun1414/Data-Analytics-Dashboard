@@ -1,37 +1,43 @@
-<header class="st-header q-pa-sm">
-    <h1 class="st-header__title text-h3">My Iris Dashboard</h1>
+<header class="st-header q-pa-sm" id="id3o">
+    <h1 class="st-header__title text-h3">Data Dashboard</h1>
 </header>
 <div class="row">
     <div class="col col-12 col-sm st-module">
-        <p><b>Number of clusters</b></p>
-        <q-slider v-model="no_of_clusters" :label="isready"></q-slider>
+        <p><b id="i099b">Group Feature</b></p>
+        <q-select :model-value="categorical_columns" :options="categorical_columns" v-model="gfeature" id="idvzh"></q-select>
     </div>
     <div class="col col-12 col-sm st-module">
-        <p><b>Number of iterations</b></p>
-        <q-slider v-model="no_of_iterations" :label="isready"></q-slider>
+        <p><b id="ilmm">Number of clusters</b></p>
+        <q-slider v-model="no_of_clusters" :label="isready" id="i8hb4"></q-slider>
     </div>
     <div class="col col-12 col-sm st-module">
-        <p><b>X feature</b></p>
-        <q-select :model-value="features" v-model="xfeature" :options="features"></q-select>
-    </div>
-    <div class="col col-12 col-sm st-module">
-        <p><b>Y feature</b></p>
-        <q-select :model-value="features" :options="features" v-model="yfeature"></q-select>
+        <p><b id="iavpy">Number of iterations</b></p>
+        <q-slider v-model="no_of_iterations" :label="isready" id="iymj7"></q-slider>
     </div>
 </div>
 <div class="row">
     <div class="col col-12 col-sm st-module">
-        <p><b>Species clusters</b></p>
+        <p><b id="i4a3v">X feature</b></p>
+        <q-select :model-value="features" v-model="xfeature" :options="features" id="i5m87"></q-select>
+    </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b id="i20z4">Y feature</b></p>
+        <q-select :model-value="features" :options="features" v-model="yfeature" id="ilgk5"></q-select>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm st-module">
+        <p><b id="i9nko">Group feature clusters</b></p>
         <plotly :data="irisplot"></plotly>
     </div>
     <div class="col col-12 col-sm st-module">
-        <p><b>k-means clusters</b></p>
+        <p><b id="ikc6h">k-means clusters</b></p>
         <plotly :data="clusterplot"></plotly>
     </div>
 </div>
 <div class="row">
     <div class="col col-12 col-sm">
-        <p><b>Iris data</b></p>
+        <p><b>Data Table</b></p>
         <% table(:datatable; dense=true, flat=true, style="height: 350px;", pagination=:datatablepagination) %> 
     </div>
 </div>
