@@ -17,6 +17,8 @@ global dataPackage = "datasets"
 global set = "iris"
 global data = dataset(dataPackage, set)
 
+global plotTypes = ["scatter", "bar", "violin", "box"]
+
 global changingDatasets = false;
 
 #features = [Symbol(c) for c in names(data)[1:end-2]]
@@ -39,16 +41,24 @@ function cluster(features, no_of_clusters=3, no_of_iterations=10)
     global data[!, :Cluster] = assignments(result)
 end
 
+function cluster2(features, no_of_clusters=3, no_of_iterations=10)
+    feats = Matrix(data[:, [c for c in features]])' |> collect
+    result = kmeans(feats, no_of_clusters; maxiter=no_of_iterations)
+end
+
+
 @handlers begin
     @out features
     @out categorical_columns
     @out keys_array
-    @in no_of_clusters = 2
+    @out plotTypes
+    @in no_of_clusters = 3
     @in no_of_iterations = 10
     @in datasetName = keys_array[1]
     @in xfeature = features[1]
     @in yfeature = features[2]
     @in gfeature = categorical_columns[1]
+    @in plotType = plotTypes[1]
     @out datatable = DataTable(data)
     @out datatablepagination = DataTablePagination(rows_per_page=50)
     @out irisplot = PlotData[]
@@ -76,13 +86,16 @@ end
 
     end
 
-    @onchange isready, xfeature, yfeature, no_of_clusters, no_of_iterations, gfeature begin
+    @onchange isready, xfeature, yfeature, no_of_clusters, no_of_iterations, gfeature, plotType begin
         if (!changingDatasets)
             println(xfeature)
             println(yfeature)
             cluster(features, no_of_clusters, no_of_iterations)
             datatable = DataTable(data)
-            irisplot = plotdata(data, xfeature, yfeature; groupfeature=Symbol(gfeature))
+            grouped_df = DataFrames.combine(DataFrames.groupby(data, Symbol(gfeature)), DataFrames.nrow => :count)
+            println(grouped_df)
+            irisplot = plotdata(data, xfeature, yfeature; groupfeature=Symbol(gfeature), plottype=plotType)
+            #irisplot = plotdata(data, xfeature, yfeature; groupfeature=Symbol(gfeature))
             clusterplot = plotdata(data, xfeature, yfeature; groupfeature=:Cluster)
         end
     end
