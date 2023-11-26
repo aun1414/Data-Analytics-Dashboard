@@ -1,0 +1,347 @@
+┌ Info: 2023-11-26 00:04:32 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-26 00:04:46 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-26 00:04:48 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\UTv5H\src\Server.jl:166
+┌ Info: 2023-11-26 00:04:48 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Error: 2023-11-26 00:05:29 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\Mahad\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   MethodError(Core.kwcall, ((kind = "histogram", bins = 10, xaxis_title = :SepalLength, yaxis_title = "Frequency", title = "Histogram of SepalLength"), StipplePlotly.Charts.plot, 150×6 DataFrame
+│  Row │ SepalLength  SepalWidth  PetalLength  PetalWidth  Species     Cluster
+│      │ Float64      Float64     Float64      Float64     Cat…        Int64
+│ ─────┼───────────────────────────────────────────────────────────────────────
+│    1 │         5.1         3.5          1.4         0.2  setosa            2
+│    2 │         4.9         3.0          1.4         0.2  setosa            2
+│    3 │         4.7         3.2          1.3         0.2  setosa            2
+│    4 │         4.6         3.1          1.5         0.2  setosa            2
+│    5 │         5.0         3.6          1.4         0.2  setosa            2
+│    6 │         5.4         3.9          1.7         0.4  setosa            2
+│    7 │         4.6         3.4          1.4         0.3  setosa            2
+│    8 │         5.0         3.4          1.5         0.2  setosa            2
+│    9 │         4.4         2.9          1.4         0.2  setosa            2
+│   10 │         4.9         3.1          1.5         0.1  setosa            2
+│   11 │         5.4         3.7          1.5         0.2  setosa            2
+│   12 │         4.8         3.4          1.6         0.2  setosa            2
+│   13 │         4.8         3.0          1.4         0.1  setosa            2
+│   14 │         4.3         3.0          1.1         0.1  setosa            2
+│   15 │         5.8         4.0          1.2         0.2  setosa            2
+│   16 │         5.7         4.4          1.5         0.4  setosa            2
+│   17 │         5.4         3.9          1.3         0.4  setosa            2
+│   18 │         5.1         3.5          1.4         0.3  setosa            2
+│   19 │         5.7         3.8          1.7         0.3  setosa            2
+│   20 │         5.1         3.8          1.5         0.3  setosa            2
+│   21 │         5.4         3.4          1.7         0.2  setosa            2
+│   22 │         5.1         3.7          1.5         0.4  setosa            2
+│   23 │         4.6         3.6          1.0         0.2  setosa            2
+│   24 │         5.1         3.3          1.7         0.5  setosa            2
+│   25 │         4.8         3.4          1.9         0.2  setosa            2
+│   26 │         5.0         3.0          1.6         0.2  setosa            2
+│   27 │         5.0         3.4          1.6         0.4  setosa            2
+│   28 │         5.2         3.5          1.5         0.2  setosa            2
+│   29 │         5.2         3.4          1.4         0.2  setosa            2
+│   30 │         4.7         3.2          1.6         0.2  setosa            2
+│   31 │         4.8         3.1          1.6         0.2  setosa            2
+│   32 │         5.4         3.4          1.5         0.4  setosa            2
+│   33 │         5.2         4.1          1.5         0.1  setosa            2
+│   34 │         5.5         4.2          1.4         0.2  setosa            2
+│   35 │         4.9         3.1          1.5         0.2  setosa            2
+│   36 │         5.0         3.2          1.2         0.2  setosa            2
+│   37 │         5.5         3.5          1.3         0.2  setosa            2
+│   38 │         4.9         3.6          1.4         0.1  setosa            2
+│   39 │         4.4         3.0          1.3         0.2  setosa            2
+│   40 │         5.1         3.4          1.5         0.2  setosa            2
+│   41 │         5.0         3.5          1.3         0.3  setosa            2
+│   42 │         4.5         2.3          1.3         0.3  setosa            2
+│   43 │         4.4         3.2          1.3         0.2  setosa            2
+│   44 │         5.0         3.5          1.6         0.6  setosa            2
+│   45 │         5.1         3.8          1.9         0.4  setosa            2
+│   46 │         4.8         3.0          1.4         0.3  setosa            2
+│   47 │         5.1         3.8          1.6         0.2  setosa            2
+│   48 │         4.6         3.2          1.4         0.2  setosa            2
+│   49 │         5.3         3.7          1.5         0.2  setosa            2
+│   50 │         5.0         3.3          1.4         0.2  setosa            2
+│   51 │         7.0         3.2          4.7         1.4  versicolor        1
+│   52 │         6.4         3.2          4.5         1.5  versicolor        1
+│   53 │         6.9         3.1          4.9         1.5  versicolor        1
+│   54 │         5.5         2.3          4.0         1.3  versicolor        1
+│   55 │         6.5         2.8          4.6         1.5  versicolor        1
+│   56 │         5.7         2.8          4.5         1.3  versicolor        1
+│   57 │         6.3         3.3          4.7         1.6  versicolor        1
+│   58 │         4.9         2.4          3.3         1.0  versicolor        2
+│   59 │         6.6         2.9          4.6         1.3  versicolor        1
+│   60 │         5.2         2.7          3.9         1.4  versicolor        1
+│   61 │         5.0         2.0          3.5         1.0  versicolor        1
+│   62 │         5.9         3.0          4.2         1.5  versicolor        1
+│   63 │         6.0         2.2          4.0         1.0  versicolor        1
+│   64 │         6.1         2.9          4.7         1.4  versicolor        1
+│   65 │         5.6         2.9          3.6         1.3  versicolor        1
+│   66 │         6.7         3.1          4.4         1.4  versicolor        1
+│   67 │         5.6         3.0          4.5         1.5  versicolor        1
+│   68 │         5.8         2.7          4.1         1.0  versicolor        1
+│   69 │         6.2         2.2          4.5         1.5  versicolor        1
+│   70 │         5.6         2.5          3.9         1.1  versicolor        1
+│   71 │         5.9         3.2          4.8         1.8  versicolor        1
+│   72 │         6.1         2.8          4.0         1.3  versicolor        1
+│   73 │         6.3         2.5          4.9         1.5  versicolor        1
+│   74 │         6.1         2.8          4.7         1.2  versicolor        1
+│   75 │         6.4         2.9          4.3         1.3  versicolor        1
+│   76 │         6.6         3.0          4.4         1.4  versicolor        1
+│   77 │         6.8         2.8          4.8         1.4  versicolor        1
+│   78 │         6.7         3.0          5.0         1.7  versicolor        1
+│   79 │         6.0         2.9          4.5         1.5  versicolor        1
+│   80 │         5.7         2.6          3.5         1.0  versicolor        1
+│   81 │         5.5         2.4          3.8         1.1  versicolor        1
+│   82 │         5.5         2.4          3.7         1.0  versicolor        1
+│   83 │         5.8         2.7          3.9         1.2  versicolor        1
+│   84 │         6.0         2.7          5.1         1.6  versicolor        1
+│   85 │         5.4         3.0          4.5         1.5  versicolor        1
+│   86 │         6.0         3.4          4.5         1.6  versicolor        1
+│   87 │         6.7         3.1          4.7         1.5  versicolor        1
+│   88 │         6.3         2.3          4.4         1.3  versicolor        1
+│   89 │         5.6         3.0          4.1         1.3  versicolor        1
+│   90 │         5.5         2.5          4.0         1.3  versicolor        1
+│   91 │         5.5         2.6          4.4         1.2  versicolor        1
+│   92 │         6.1         3.0          4.6         1.4  versicolor        1
+│   93 │         5.8         2.6          4.0         1.2  versicolor        1
+│   94 │         5.0         2.3          3.3         1.0  versicolor        2
+│   95 │         5.6         2.7          4.2         1.3  versicolor        1
+│   96 │         5.7         3.0          4.2         1.2  versicolor        1
+│   97 │         5.7         2.9          4.2         1.3  versicolor        1
+│   98 │         6.2         2.9          4.3         1.3  versicolor        1
+│   99 │         5.1         2.5          3.0         1.1  versicolor        2
+│  100 │         5.7         2.8          4.1         1.3  versicolor        1
+│  101 │         6.3         3.3          6.0         2.5  virginica         1
+│  102 │         5.8         2.7          5.1         1.9  virginica         1
+│  103 │         7.1         3.0          5.9         2.1  virginica         1
+│  104 │         6.3         2.9          5.6         1.8  virginica         1
+│  105 │         6.5         3.0          5.8         2.2  virginica         1
+│  106 │         7.6         3.0          6.6         2.1  virginica         1
+│  107 │         4.9         2.5          4.5         1.7  virginica         1
+│  108 │         7.3         2.9          6.3         1.8  virginica         1
+│  109 │         6.7         2.5          5.8         1.8  virginica         1
+│  110 │         7.2         3.6          6.1         2.5  virginica         1
+│  111 │         6.5         3.2          5.1         2.0  virginica         1
+│  112 │         6.4         2.7          5.3         1.9  virginica         1
+│  113 │         6.8         3.0          5.5         2.1  virginica         1
+│  114 │         5.7         2.5          5.0         2.0  virginica         1
+│  115 │         5.8         2.8          5.1         2.4  virginica         1
+│  116 │         6.4         3.2          5.3         2.3  virginica         1
+│  117 │         6.5         3.0          5.5         1.8  virginica         1
+│  118 │         7.7         3.8          6.7         2.2  virginica         1
+│  119 │         7.7         2.6          6.9         2.3  virginica         1
+│  120 │         6.0         2.2          5.0         1.5  virginica         1
+│  121 │         6.9         3.2          5.7         2.3  virginica         1
+│  122 │         5.6         2.8          4.9         2.0  virginica         1
+│  123 │         7.7         2.8          6.7         2.0  virginica         1
+│  124 │         6.3         2.7          4.9         1.8  virginica         1
+│  125 │         6.7         3.3          5.7         2.1  virginica         1
+│  126 │         7.2         3.2          6.0         1.8  virginica         1
+│  127 │         6.2         2.8          4.8         1.8  virginica         1
+│  128 │         6.1         3.0          4.9         1.8  virginica         1
+│  129 │         6.4         2.8          5.6         2.1  virginica         1
+│  130 │         7.2         3.0          5.8         1.6  virginica         1
+│  131 │         7.4         2.8          6.1         1.9  virginica         1
+│  132 │         7.9         3.8          6.4         2.0  virginica         1
+│  133 │         6.4         2.8          5.6         2.2  virginica         1
+│  134 │         6.3         2.8          5.1         1.5  virginica         1
+│  135 │         6.1         2.6          5.6         1.4  virginica         1
+│  136 │         7.7         3.0          6.1         2.3  virginica         1
+│  137 │         6.3         3.4          5.6         2.4  virginica         1
+│  138 │         6.4         3.1          5.5         1.8  virginica         1
+│  139 │         6.0         3.0          4.8         1.8  virginica         1
+│  140 │         6.9         3.1          5.4         2.1  virginica         1
+│  141 │         6.7         3.1          5.6         2.4  virginica         1
+│  142 │         6.9         3.1          5.1         2.3  virginica         1
+│  143 │         5.8         2.7          5.1         1.9  virginica         1
+│  144 │         6.8         3.2          5.9         2.3  virginica         1
+│  145 │         6.7         3.3          5.7         2.5  virginica         1
+│  146 │         6.7         3.0          5.2         2.3  virginica         1
+│  147 │         6.3         2.5          5.0         1.9  virginica         1
+│  148 │         6.5         3.0          5.2         2.0  virginica         1
+│  149 │         6.2         3.4          5.4         2.3  virginica         1
+│  150 │         5.9         3.0          5.1         1.8  virginica         1), 0x00000000000083d4)
+│ 
+│   exception = (MethodError(Core.kwcall, ((kind = "histogram", bins = 10, xaxis_title = :SepalLength, yaxis_title = "Frequency", title = "Histogram of SepalLength"), StipplePlotly.Charts.plot, 150×6 DataFrame
+ Row │ SepalLength  SepalWidth  PetalLength  PetalWidth  Species     Cluster
+     │ Float64      Float64     Float64      Float64     Cat…        Int64
+─────┼───────────────────────────────────────────────────────────────────────
+   1 │         5.1         3.5          1.4         0.2  setosa            2
+   2 │         4.9         3.0          1.4         0.2  setosa            2
+   3 │         4.7         3.2          1.3         0.2  setosa            2
+   4 │         4.6         3.1          1.5         0.2  setosa            2
+   5 │         5.0         3.6          1.4         0.2  setosa            2
+   6 │         5.4         3.9          1.7         0.4  setosa            2
+   7 │         4.6         3.4          1.4         0.3  setosa            2
+   8 │         5.0         3.4          1.5         0.2  setosa            2
+   9 │         4.4         2.9          1.4         0.2  setosa            2
+  10 │         4.9         3.1          1.5         0.1  setosa            2
+  11 │         5.4         3.7          1.5         0.2  setosa            2
+  12 │         4.8         3.4          1.6         0.2  setosa            2
+  13 │         4.8         3.0          1.4         0.1  setosa            2
+  14 │         4.3         3.0          1.1         0.1  setosa            2
+  15 │         5.8         4.0          1.2         0.2  setosa            2
+  16 │         5.7         4.4          1.5         0.4  setosa            2
+  17 │         5.4         3.9          1.3         0.4  setosa            2
+  18 │         5.1         3.5          1.4         0.3  setosa            2
+  19 │         5.7         3.8          1.7         0.3  setosa            2
+  20 │         5.1         3.8          1.5         0.3  setosa            2
+  21 │         5.4         3.4          1.7         0.2  setosa            2
+  22 │         5.1         3.7          1.5         0.4  setosa            2
+  23 │         4.6         3.6          1.0         0.2  setosa            2
+  24 │         5.1         3.3          1.7         0.5  setosa            2
+  25 │         4.8         3.4          1.9         0.2  setosa            2
+  26 │         5.0         3.0          1.6         0.2  setosa            2
+  27 │         5.0         3.4          1.6         0.4  setosa            2
+  28 │         5.2         3.5          1.5         0.2  setosa            2
+  29 │         5.2         3.4          1.4         0.2  setosa            2
+  30 │         4.7         3.2          1.6         0.2  setosa            2
+  31 │         4.8         3.1          1.6         0.2  setosa            2
+  32 │         5.4         3.4          1.5         0.4  setosa            2
+  33 │         5.2         4.1          1.5         0.1  setosa            2
+  34 │         5.5         4.2          1.4         0.2  setosa            2
+  35 │         4.9         3.1          1.5         0.2  setosa            2
+  36 │         5.0         3.2          1.2         0.2  setosa            2
+  37 │         5.5         3.5          1.3         0.2  setosa            2
+  38 │         4.9         3.6          1.4         0.1  setosa            2
+  39 │         4.4         3.0          1.3         0.2  setosa            2
+  40 │         5.1         3.4          1.5         0.2  setosa            2
+  41 │         5.0         3.5          1.3         0.3  setosa            2
+  42 │         4.5         2.3          1.3         0.3  setosa            2
+  43 │         4.4         3.2          1.3         0.2  setosa            2
+  44 │         5.0         3.5          1.6         0.6  setosa            2
+  45 │         5.1         3.8          1.9         0.4  setosa            2
+  46 │         4.8         3.0          1.4         0.3  setosa            2
+  47 │         5.1         3.8          1.6         0.2  setosa            2
+  48 │         4.6         3.2          1.4         0.2  setosa            2
+  49 │         5.3         3.7          1.5         0.2  setosa            2
+  50 │         5.0         3.3          1.4         0.2  setosa            2
+  51 │         7.0         3.2          4.7         1.4  versicolor        1
+  52 │         6.4         3.2          4.5         1.5  versicolor        1
+  53 │         6.9         3.1          4.9         1.5  versicolor        1
+  54 │         5.5         2.3          4.0         1.3  versicolor        1
+  55 │         6.5         2.8          4.6         1.5  versicolor        1
+  56 │         5.7         2.8          4.5         1.3  versicolor        1
+  57 │         6.3         3.3          4.7         1.6  versicolor        1
+  58 │         4.9         2.4          3.3         1.0  versicolor        2
+  59 │         6.6         2.9          4.6         1.3  versicolor        1
+  60 │         5.2         2.7          3.9         1.4  versicolor        1
+  61 │         5.0         2.0          3.5         1.0  versicolor        1
+  62 │         5.9         3.0          4.2         1.5  versicolor        1
+  63 │         6.0         2.2          4.0         1.0  versicolor        1
+  64 │         6.1         2.9          4.7         1.4  versicolor        1
+  65 │         5.6         2.9          3.6         1.3  versicolor        1
+  66 │         6.7         3.1          4.4         1.4  versicolor        1
+  67 │         5.6         3.0          4.5         1.5  versicolor        1
+  68 │         5.8         2.7          4.1         1.0  versicolor        1
+  69 │         6.2         2.2          4.5         1.5  versicolor        1
+  70 │         5.6         2.5          3.9         1.1  versicolor        1
+  71 │         5.9         3.2          4.8         1.8  versicolor        1
+  72 │         6.1         2.8          4.0         1.3  versicolor        1
+  73 │         6.3         2.5          4.9         1.5  versicolor        1
+  74 │         6.1         2.8          4.7         1.2  versicolor        1
+  75 │         6.4         2.9          4.3         1.3  versicolor        1
+  76 │         6.6         3.0          4.4         1.4  versicolor        1
+  77 │         6.8         2.8          4.8         1.4  versicolor        1
+  78 │         6.7         3.0          5.0         1.7  versicolor        1
+  79 │         6.0         2.9          4.5         1.5  versicolor        1
+  80 │         5.7         2.6          3.5         1.0  versicolor        1
+  81 │         5.5         2.4          3.8         1.1  versicolor        1
+  82 │         5.5         2.4          3.7         1.0  versicolor        1
+  83 │         5.8         2.7          3.9         1.2  versicolor        1
+  84 │         6.0         2.7          5.1         1.6  versicolor        1
+  85 │         5.4         3.0          4.5         1.5  versicolor        1
+  86 │         6.0         3.4          4.5         1.6  versicolor        1
+  87 │         6.7         3.1          4.7         1.5  versicolor        1
+  88 │         6.3         2.3          4.4         1.3  versicolor        1
+  89 │         5.6         3.0          4.1         1.3  versicolor        1
+  90 │         5.5         2.5          4.0         1.3  versicolor        1
+  91 │         5.5         2.6          4.4         1.2  versicolor        1
+  92 │         6.1         3.0          4.6         1.4  versicolor        1
+  93 │         5.8         2.6          4.0         1.2  versicolor        1
+  94 │         5.0         2.3          3.3         1.0  versicolor        2
+  95 │         5.6         2.7          4.2         1.3  versicolor        1
+  96 │         5.7         3.0          4.2         1.2  versicolor        1
+  97 │         5.7         2.9          4.2         1.3  versicolor        1
+  98 │         6.2         2.9          4.3         1.3  versicolor        1
+  99 │         5.1         2.5          3.0         1.1  versicolor        2
+ 100 │         5.7         2.8          4.1         1.3  versicolor        1
+ 101 │         6.3         3.3          6.0         2.5  virginica         1
+ 102 │         5.8         2.7          5.1         1.9  virginica         1
+ 103 │         7.1         3.0          5.9         2.1  virginica         1
+ 104 │         6.3         2.9          5.6         1.8  virginica         1
+ 105 │         6.5         3.0          5.8         2.2  virginica         1
+ 106 │         7.6         3.0          6.6         2.1  virginica         1
+ 107 │         4.9         2.5          4.5         1.7  virginica         1
+ 108 │         7.3         2.9          6.3         1.8  virginica         1
+ 109 │         6.7         2.5          5.8         1.8  virginica         1
+ 110 │         7.2         3.6          6.1         2.5  virginica         1
+ 111 │         6.5         3.2          5.1         2.0  virginica         1
+ 112 │         6.4         2.7          5.3         1.9  virginica         1
+ 113 │         6.8         3.0          5.5         2.1  virginica         1
+ 114 │         5.7         2.5          5.0         2.0  virginica         1
+ 115 │         5.8         2.8          5.1         2.4  virginica         1
+ 116 │         6.4         3.2          5.3         2.3  virginica         1
+ 117 │         6.5         3.0          5.5         1.8  virginica         1
+ 118 │         7.7         3.8          6.7         2.2  virginica         1
+ 119 │         7.7         2.6          6.9         2.3  virginica         1
+ 120 │         6.0         2.2          5.0         1.5  virginica         1
+ 121 │         6.9         3.2          5.7         2.3  virginica         1
+ 122 │         5.6         2.8          4.9         2.0  virginica         1
+ 123 │         7.7         2.8          6.7         2.0  virginica         1
+ 124 │         6.3         2.7          4.9         1.8  virginica         1
+ 125 │         6.7         3.3          5.7         2.1  virginica         1
+ 126 │         7.2         3.2          6.0         1.8  virginica         1
+ 127 │         6.2         2.8          4.8         1.8  virginica         1
+ 128 │         6.1         3.0          4.9         1.8  virginica         1
+ 129 │         6.4         2.8          5.6         2.1  virginica         1
+ 130 │         7.2         3.0          5.8         1.6  virginica         1
+ 131 │         7.4         2.8          6.1         1.9  virginica         1
+ 132 │         7.9         3.8          6.4         2.0  virginica         1
+ 133 │         6.4         2.8          5.6         2.2  virginica         1
+ 134 │         6.3         2.8          5.1         1.5  virginica         1
+ 135 │         6.1         2.6          5.6         1.4  virginica         1
+ 136 │         7.7         3.0          6.1         2.3  virginica         1
+ 137 │         6.3         3.4          5.6         2.4  virginica         1
+ 138 │         6.4         3.1          5.5         1.8  virginica         1
+ 139 │         6.0         3.0          4.8         1.8  virginica         1
+ 140 │         6.9         3.1          5.4         2.1  virginica         1
+ 141 │         6.7         3.1          5.6         2.4  virginica         1
+ 142 │         6.9         3.1          5.1         2.3  virginica         1
+ 143 │         5.8         2.7          5.1         1.9  virginica         1
+ 144 │         6.8         3.2          5.9         2.3  virginica         1
+ 145 │         6.7         3.3          5.7         2.5  virginica         1
+ 146 │         6.7         3.0          5.2         2.3  virginica         1
+ 147 │         6.3         2.5          5.0         1.9  virginica         1
+ 148 │         6.5         3.0          5.2         2.0  virginica         1
+ 149 │         6.2         3.4          5.4         2.3  virginica         1
+ 150 │         5.9         3.0          5.1         1.8  virginica         1), 0x00000000000083d4), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ffc504aeeac, Ptr{Nothing} @0x00007ffc504b56c5, Ptr{Nothing} @0x00007ffc504b58e2, Ptr{Nothing} @0x00007ffc504b9ddd, Ptr{Nothing} @0x000002690547dda9, Ptr{Nothing} @0x000002690547de15, Ptr{Nothing} @0x00007ffc504c476a, Ptr{Nothing} @0x00007ffc504c6663, Ptr{Nothing} @0x00007ffc1fc137dd, Ptr{Nothing} @0x00007ffc504c6663, Ptr{Nothing} @0x00007ffc1fc139f3, Ptr{Nothing} @0x00007ffc504c6663, Ptr{Nothing} @0x000002695e0c429f, Ptr{Nothing} @0x000002695e0c42d6, Ptr{Nothing} @0x00007ffc504c476a, Ptr{Nothing} @0x000002690545c5e6, Ptr{Nothing} @0x000002690546f4b7, Ptr{Nothing} @0x000002690546f79c, Ptr{Nothing} @0x00007ffc504c476a, Ptr{Nothing} @0x00007ffc504c6663, Ptr{Nothing} @0x00007ffc1fc137dd, Ptr{Nothing} @0x00007ffc504c6663, Ptr{Nothing} @0x00007ffc1fc139f3, Ptr{Nothing} @0x00007ffc504c6663, Ptr{Nothing} @0x000002695e0c429f, Ptr{Nothing} @0x000002695e0c42d6, Ptr{Nothing} @0x00007ffc504c476a, Ptr{Nothing} @0x000002690545e985, Ptr{Nothing} @0x000002690545f28d, Ptr{Nothing} @0x000002690545f2ca, Ptr{Nothing} @0x000002690545c9a0, Ptr{Nothing} @0x000002690545ca70, Ptr{Nothing} @0x00000269054573ac, Ptr{Nothing} @0x0000026905457513, Ptr{Nothing} @0x00000269052a0103, Ptr{Nothing} @0x00000269052a061a, Ptr{Nothing} @0x00000269052a06a0, Ptr{Nothing} @0x00000269052a06da, Ptr{Nothing} @0x000002690528e219, Ptr{Nothing} @0x000002690528e263, Ptr{Nothing} @0x00007ffc504c476a, Ptr{Nothing} @0x0000026905260832, Ptr{Nothing} @0x0000026905260e82, Ptr{Nothing} @0x000002690526220f, Ptr{Nothing} @0x0000026905267e41, Ptr{Nothing} @0x0000026905267ee6, Ptr{Nothing} @0x00007ffc504c476a, Ptr{Nothing} @0x000002690525620c, Ptr{Nothing} @0x0000026905258447, Ptr{Nothing} @0x0000026905258503, Ptr{Nothing} @0x00007ffc504d84fb])
+└ @ Stipple C:\Users\Mahad\.julia\packages\Stipple\nxNDc\src\stipple\mutators.jl:54
+┌ Info: 2023-11-26 00:05:48 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22

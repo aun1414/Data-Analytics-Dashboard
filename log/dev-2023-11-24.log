@@ -7426,3 +7426,15 @@
 └ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
 ┌ Info: 2023-11-24 19:43:49 Autoreloading
 └ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-24 19:52:22 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-24 19:53:04 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\test"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-24 19:53:06 
+│ Web Server starting at http://0.0.0.0:9103 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\ZW9YP\src\Server.jl:166
+┌ Info: 2023-11-24 19:53:06 Listening on: 0.0.0.0:9103, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Error: 2023-11-24 19:54:18 Error watching manifest
+│   exception = (ErrorException("lowering returned an error, \$(Expr(:error, \"\\\"\\\$\\\" expression outside quote around C:\\\\Users\\\\Mahad\\\\.julia\\\\packages\\\\ExproniconLite\\\\IBbmc\\\\src\\\\transform.jl:75\"))"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ffe4ea0b574, Ptr{Nothing} @0x00007ffe1ae4be1a])
+└ @ Revise C:\Users\Mahad\.julia\packages\Revise\xRltd\src\pkgs.jl:489

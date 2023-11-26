@@ -5,33 +5,47 @@ using GenieFramework
 using CategoricalArrays
 @genietools
 # Examples: {mlmRev,Early} {datasets,iris}
-const dataPackage = "mlmRev"
-const set = "bdf"
-data = dataset(dataPackage, set)
+global dict = Dict(
+    "iris" => "datasets",
+    "Early" => "mlmRev",
+    "bdf" => "mlmRev",
+    "Exam" => "mlmRev",
+)
+global keys_array = collect(keys(dict))
+
+global dataPackage = "datasets"
+global set = "iris"
+global data = dataset(dataPackage, set)
+
+global changingDatasets = false;
 
 #features = [Symbol(c) for c in names(data)[1:end-2]]
 
 # Get column names of categorical columns
-categorical_columns = [name for name in names(data) if eltype(data[!, name]) <: CategoricalValue]
+global categorical_columns = [name for name in names(data) if eltype(data[!, name]) <: CategoricalValue]
 
 # Select all non-categorical columns as features and convert to symbols
-features = [Symbol(c) for c in setdiff(names(data), categorical_columns)]
+global features = [Symbol(c) for c in setdiff(names(data), categorical_columns)]
 
 #categorical_columns = [Symbol(element) for element in categorical_columns]
 # Insert a new column with zeros
-data = DataFrames.insertcols!(data, :Cluster => zeros(Int, size(data, 1)))
+global data = DataFrames.insertcols!(data, :Cluster => zeros(Int, size(data, 1)))
 
-function cluster(no_of_clusters=3, no_of_iterations=10)
+
+function cluster(features, no_of_clusters=3, no_of_iterations=10)
+    println(features)
     feats = Matrix(data[:, [c for c in features]])' |> collect
     result = kmeans(feats, no_of_clusters; maxiter=no_of_iterations)
-    data[!, :Cluster] = assignments(result)
+    global data[!, :Cluster] = assignments(result)
 end
 
 @handlers begin
     @out features
     @out categorical_columns
+    @out keys_array
     @in no_of_clusters = 2
     @in no_of_iterations = 10
+    @in datasetName = keys_array[1]
     @in xfeature = features[1]
     @in yfeature = features[2]
     @in gfeature = categorical_columns[1]
@@ -40,11 +54,37 @@ end
     @out irisplot = PlotData[]
     @out clusterplot = PlotData[]
 
+    @onchange isready, datasetName begin
+        global changingDatasets = true
+        println(datasetName)
+        global dataPackage = get(dict, datasetName, "iris")
+        println(dataPackage)
+        global set = datasetName
+        global data = dataset(dataPackage, set)
+
+        global categorical_columns = [name for name in names(data) if eltype(data[!, name]) <: CategoricalValue]
+
+        # Select all non-categorical columns as features and convert to symbols
+        global features = [Symbol(c) for c in setdiff(names(data), categorical_columns)]
+        xfeature = features[1]
+        yfeature = features[2]
+        #categorical_columns = [Symbol(element) for element in categorical_columns]
+        # Insert a new column with zeros
+        global data = DataFrames.insertcols!(data, :Cluster => zeros(Int, size(data, 1)))
+        global changingDatasets = false
+        gfeature = categorical_columns[1]
+
+    end
+
     @onchange isready, xfeature, yfeature, no_of_clusters, no_of_iterations, gfeature begin
-        cluster(no_of_clusters, no_of_iterations)
-        datatable = DataTable(data)
-        irisplot = plotdata(data, xfeature, yfeature; groupfeature=Symbol(gfeature))
-        clusterplot = plotdata(data, xfeature, yfeature; groupfeature=:Cluster)
+        if (!changingDatasets)
+            println(xfeature)
+            println(yfeature)
+            cluster(features, no_of_clusters, no_of_iterations)
+            datatable = DataTable(data)
+            irisplot = plotdata(data, xfeature, yfeature; groupfeature=Symbol(gfeature))
+            clusterplot = plotdata(data, xfeature, yfeature; groupfeature=:Cluster)
+        end
     end
 end
 
