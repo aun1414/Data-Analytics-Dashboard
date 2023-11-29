@@ -23,16 +23,12 @@
 </div>
 <div class="row">
     <div class="col col-12 col-sm st-module">
-        <p><b id="i5ng4">Plot Type</b></p>
-        <q-select :model-value="plotTypes" v-model="plotType" :options="plotTypes" id="issd8"></q-select>
+        <p><b id="i4yki">X feature</b></p>
+        <q-select :model-value="features" v-model="xfeature" :options="features" id="idwc3"></q-select>
     </div>
     <div class="col col-12 col-sm st-module">
-        <p><b id="i4a3v">X feature</b></p>
-        <q-select :model-value="features" v-model="xfeature" :options="features" id="i5m87"></q-select>
-    </div>
-    <div class="col col-12 col-sm st-module">
-        <p><b id="i20z4">Y feature</b></p>
-        <q-select :model-value="features" :options="features" v-model="yfeature" id="ilgk5"></q-select>
+        <p><b id="iy0gs">Y feature</b></p>
+        <q-select :model-value="features" :options="features" v-model="yfeature" id="ialbw"></q-select>
     </div>
 </div>
 <div class="row">
@@ -43,6 +39,32 @@
     <div class="col col-12 col-sm st-module">
         <p><b id="ikc6h">k-means clusters</b></p>
         <plotly :data="clusterplot"></plotly>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm st-module">
+        <p><b id="ii811">Group feature Frequency Chart</b></p>
+        <plotly :data="barplot"></plotly>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm st-module">
+        <p><b id="i5ng4">Plot Type</b></p>
+        <q-select :model-value="plotTypes" v-model="plotType" :options="plotTypes" id="issd8"></q-select>
+    </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b id="irtt9">Group</b></p>
+        <q-select :model-value="categorical_columns" :options="categorical_columns" v-model="gfeature2" id="ih8os"></q-select>
+    </div>
+    <div class="col col-12 col-sm st-module">
+        <p><b id="i20z4">Feature</b></p>
+        <q-select :model-value="features" :options="features" v-model="zfeature" id="ilgk5"></q-select>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm st-module">
+        <p><b id="i3xs5">Group Feature x Feature Distribution Plots</b></p>
+        <plotly :data="boxplot"></plotly>
     </div>
 </div>
 <div class="row">

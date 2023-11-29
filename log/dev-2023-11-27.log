@@ -1,0 +1,94 @@
+┌ Info: 2023-11-27 12:07:19 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\testmain"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-27 12:07:35 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\testmain"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-27 12:07:37 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\UTv5H\src\Server.jl:166
+┌ Info: 2023-11-27 12:07:37 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
+┌ Info: 2023-11-27 12:12:51 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:13:57 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:16:50 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:16:54 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:17:13 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:18:31 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:21:03 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:26:26 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:27:41 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:28:13 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:28:51 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:29:30 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:31:09 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:31:21 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:31:37 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:31:53 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:34:49 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:35:27 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:35:38 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:37:01 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:37:13 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:39:34 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Error: 2023-11-27 12:39:41 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ Observables C:\Users\Mahad\.julia\packages\Observables\YdEbO\src\Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Bool
+│ 
+│   Value:
+│   true
+│ 
+│   Exception:
+│   MethodError(Core.kwcall, ((paper_bgcolor = "lightgrey", plot_bgcolor = "white"), Stipple.Layout), 0x000000000000920b)
+│ 
+│   exception = (MethodError(Core.kwcall, ((paper_bgcolor = "lightgrey", plot_bgcolor = "white"), Stipple.Layout), 0x000000000000920b), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ff93f79eeac, Ptr{Nothing} @0x00007ff93f7a56c5, Ptr{Nothing} @0x00007ff93f7a58e2, Ptr{Nothing} @0x00007ff93f7a9ddd, Ptr{Nothing} @0x000001e68b87adb9, Ptr{Nothing} @0x000001e68b87ae07, Ptr{Nothing} @0x00007ff93f7b476a, Ptr{Nothing} @0x00007ff93f7b6663, Ptr{Nothing} @0x00007ff924dd37dd, Ptr{Nothing} @0x00007ff93f7b6663, Ptr{Nothing} @0x00007ff924dd39f3, Ptr{Nothing} @0x00007ff93f7b6663, Ptr{Nothing} @0x000001e6da0a2f8f, Ptr{Nothing} @0x000001e6da0a2fc6, Ptr{Nothing} @0x00007ff93f7b476a, Ptr{Nothing} @0x000001e68a433c56, Ptr{Nothing} @0x000001e68b879422, Ptr{Nothing} @0x000001e68b8796fc, Ptr{Nothing} @0x00007ff93f7b476a, Ptr{Nothing} @0x00007ff93f7b6663, Ptr{Nothing} @0x00007ff924dd37dd, Ptr{Nothing} @0x00007ff93f7b6663, Ptr{Nothing} @0x00007ff924dd39f3, Ptr{Nothing} @0x00007ff93f7b6663, Ptr{Nothing} @0x000001e6da0a2f8f, Ptr{Nothing} @0x000001e6da0a2fc6, Ptr{Nothing} @0x00007ff93f7b476a, Ptr{Nothing} @0x000001e68a435ff5, Ptr{Nothing} @0x000001e68a4368fd, Ptr{Nothing} @0x000001e68a43693a, Ptr{Nothing} @0x000001e68b86f3a0, Ptr{Nothing} @0x000001e68b86f470, Ptr{Nothing} @0x000001e68b86e4a0, Ptr{Nothing} @0x000001e68b86e613, Ptr{Nothing} @0x000001e68a426133, Ptr{Nothing} @0x000001e68a42664d, Ptr{Nothing} @0x000001e68a4266d0, Ptr{Nothing} @0x000001e68a42670a, Ptr{Nothing} @0x000001e68a414639, Ptr{Nothing} @0x000001e68a414683, Ptr{Nothing} @0x00007ff93f7b476a, Ptr{Nothing} @0x000001e6fa141922, Ptr{Nothing} @0x000001e6fa141f72, Ptr{Nothing} @0x000001e6fa147069, Ptr{Nothing} @0x000001e6fa147db1, Ptr{Nothing} @0x000001e6fa147e56, Ptr{Nothing} @0x00007ff93f7b476a, Ptr{Nothing} @0x000001e6fa13613c, Ptr{Nothing} @0x000001e6fa138384, Ptr{Nothing} @0x000001e6fa138443, Ptr{Nothing} @0x00007ff93f7c84fb])
+└ @ Stipple C:\Users\Mahad\.julia\packages\Stipple\nxNDc\src\stipple\mutators.jl:54
+┌ Info: 2023-11-27 12:40:34 Autoreloading
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:22
+┌ Info: 2023-11-27 12:41:15 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\testmain"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-27 12:41:36 Watching ["C:\\Users\\Mahad\\.julia\\geniebuilder\\apps\\testmain"]
+└ @ GenieAutoReload C:\Users\Mahad\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-11-27 12:41:37 
+│ Web Server starting at http://0.0.0.0:9105 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\Mahad\.julia\packages\Genie\UTv5H\src\Server.jl:166
+┌ Info: 2023-11-27 12:41:38 Listening on: 0.0.0.0:9105, thread id: 1
+└ @ HTTP.Servers C:\Users\Mahad\.julia\packages\HTTP\SN7VW\src\Servers.jl:367
